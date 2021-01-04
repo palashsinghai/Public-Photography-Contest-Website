@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "icon" href ="{{ url_for('static', filename='img/camera.png') }}" 
+        type = "image/x-icon">
+  <title>User Register</title>
+  <style type="text/css">
+    .topnav {
+       overflow: hidden;
+       background-color: #333;
+      } 
+   
+         .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Arial",sans-serif;
+
+    }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: #c0232c;
+      }
+      .title{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'verdana', sans-serif;
+   } 
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+
+    }
+    .descr {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 20px;
+    }
+    .footer_bottom a, .footer_bottom ul li a {
+    font-family: Source Sans Pro, sans-serif;
+    }
+    .footer_bottom {
+    display: table-cell;
+    line-height: 32px;
+    height: 65px;
+    width: 1%;
+    vertical-align: middle;
+
+    }
+    .footer_bottom, .footer_bottom span:not(.q_social_icon_holder):not(.fa-stack):not(.social_icon):not(.q_font_elegant_icon), .footer_bottom p {
+    font-family: Source Sans Pro, sans-serif;
+    color: #d8d8d8;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: center;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    }
+
+    a, p a {
+    color: #fe3700;
+    font-style: normal;
+    }  
+    .container{
+      height: 200px;
+    }
+    .input-img{
+      text-align: center;
+      padding-bottom
+      height:25px;
+      margin: 20px;
+    }
+    .descr-box{
+      text-align: center;
+      height:300px;
+      margin: 15px;
+    }
+    .form-group{
+      text-align: center;
+      height:40px;
+      margin: 20px;   
+    }
+    .group label{
+
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    font-weight: 30;
+     color: #f2f2f2 !important; 
+    }
+    input{
+
+      background-color: #171717;
+      width: 20%;
+      margin: 8px 0;
+      padding: 7px 10px;
+      display: inline-block;
+      border:4px solid #f2f2f2;
+      border-radius: 18px;
+      box-sizing: border-box;
+      font-size: 20px;
+
+      }
+      button{
+    width: 20%;
+    padding: 9px 5px;
+    margin:5px 0;
+    cursor:pointer;
+    border:none;
+    color:#ffffff;
+    
+    }
+    .submit-button{
+    font-weight: 700;
+    font-size: 18px;
+    color: #171717;
+    background: #f2f2f2;
+    text-align: center;
+    margin-top: 26px;
+    padding: 9px 30px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border-radius: 18px;
+    } 
+    .submit-button:hover{
+      background-color: #171717;
+      color: #f2f2f2;
+      transition: 0.4s;
+      border:3px solid #f2f2f2;;
+    }
+    .button a{
+    font-weight: 700;
+    font-size: 18px;
+    color: #171717;
+    background: #f2f2f2;
+    text-align: center;
+    margin-top: 26px;
+    padding: 9px 30px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border-radius: 18px;
+    } 
+    .button a:hover{
+      background-color: #171717;
+      color: #f2f2f2;
+      transition: 0.4s;
+      border:3px solid #f2f2f2;;
+    }
+     body{
+      background-color: #171717;
+    padding: 0px; 
+    width: 100%;
+    margin: 0px auto;
+    text-align: center; 
+  
+   }
+  </style>
+<meta charset="ISO-8859-1">
+</head>
+ 
+<body>
+ <div class="topnav">
+  <a class="active" href="/login">Admin</a>
+  <a href="/">Home</a>
+  <a href="/contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<h2 class="title" style="color: #f2f2f2; font-family: Arial, sans-serif;">Sign Up</h2>
+
+<div>
+  <img style="float: right; padding-top: 40px; padding-right: 80px; padding-bottom: 50px;" height="600px" width="800px" src="{{ url_for('static', filename='img/signup.jpg') }}">
+</div>
+
+<form name="Userregister" action="/uregister" method="post">
+ 
+<div class="group" style="padding-top: 155px;">   
+
+<input type="text" placeholder="Username" name="username" id="uname" style="color: #f2f2f2;font-weight: bold;" autocomplete="off"><br/>
+ 
+<input type="password" placeholder="Password" name="password" id="password" style="color: #f2f2f2;font-weight: bold;"><br/>
+
+<input type="text" placeholder="Email" name="email" id="email" style="color: #f2f2f2;font-weight: bold;" autocomplete="off"><br/ >
+ 
+
+</div> 
+<div class="msg" style="color: {{ colour }} ; font-size: 20px;font-weight: bold;font-family: Arial;">{{ msg }}</div>
+<div class="container">
+  <button type="submit" class="submit-button" >Submit</button> 
+
+</div>
+        
+
+</form>
+<div class="button">
+  <a href="/ulogin">Sign In</a>
+</div>
+<br><br><br>
+<footer class="footer_border_columns">
+<div class="footer_inner clearfix">
+<div class="fotter_top_border_holder " style="height: 0px;background-color: #f9f9f9;"></div>
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer_bottom_holder">
+<div class="footer_bottom">
+<div class="textwidget custom-html-widget"><span style="font-size:14px;font-family: Arial, sans-serif; color: #f2f2f2;text-align:center;font-weight: 800;">
+THE IMAGES CAN NOT BE PUBLISHED OR RE-USED IN ANY FORM WITHOUT WRITTEN PERMISSION.
+</span><br/><span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;">
+COPYRIGHT © 2007 - 2020 Annual Photography Contest ALL RIGHTS RESERVED. </span><br/>
+<span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;" ><a href="" style="text-decoration: none;">PRIVACY POLICY</a>&nbsp;&nbsp;  |  &nbsp;&nbsp;<a href="/contact" style="text-decoration: none;">CONTACT </a></span><br/>
+<br/><br/></div>        </div>
+</div>
+</div>
+
+</footer>
+</body>
+</html>

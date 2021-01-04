@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	
+  
+	<style>
+
+    html,body{
+    margin:0;
+    height:100%;
+    }
+    @font-face {font-family: "GT Sectra Display Super"; src: url("//db.onlinewebfonts.com/t/8f5d911213d308eb53739263c41e6b6f.eot"); src: url("//db.onlinewebfonts.com/t/8f5d911213d308eb53739263c41e6b6f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8f5d911213d308eb53739263c41e6b6f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8f5d911213d308eb53739263c41e6b6f.woff") format("woff"), url("//db.onlinewebfonts.com/t/8f5d911213d308eb53739263c41e6b6f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8f5d911213d308eb53739263c41e6b6f.svg#GT Sectra Display Super") format("svg"); }
+    section{
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    }
+    section{
+    display: block;
+    }
+    .gtsectra-bold{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%); 
+      color: #ffffff;
+      font-size: 80px;
+      font-family: 'GT Sectra Display Super';
+
+    }
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Arial",sans-serif;
+
+    }
+
+    .topnav a:hover {
+    background-color: #ffffff;
+    color: #c0232c;
+    }
+    .register-button a {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background: #c0232c;
+    text-align: center;
+    margin-top: 26px;
+    padding: 10px 30px;
+    border-radius: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    }
+    .register-button a:hover {
+      background-color: #ffffff;
+      color: #c0232c;
+      border: 3px solid #c0232c;
+      transition: 0.4s ;
+      }
+    .img-container2{
+    height: 50%;
+    width: 30%;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    float: left;
+    }
+    .img-container {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+      	table, th, td {
+  		border: 1px solid black;
+	  }
+
+	  
+     body{
+
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    background: #ffffff;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+    width: 100%;
+    background-color: #ffffff;
+    }
+    footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    }
+    .footer_bottom a, .footer_bottom ul li a {
+    font-family: Source Sans Pro, sans-serif;
+    }
+    .footer_bottom {
+    display: table-cell;
+    line-height: 32px;
+    height: 65px;
+    width: 1%;
+    vertical-align: middle;
+    }
+    .footer_bottom, .footer_bottom span:not(.q_social_icon_holder):not(.fa-stack):not(.social_icon):not(.q_font_elegant_icon), .footer_bottom p {
+    font-family: Source Sans Pro, sans-serif;
+    color: #d8d8d8;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: center;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    }
+    
+    a, p a {
+    color: #fe3700;
+    font-style: normal;
+    }
+
+    .vl {
+     border-left: 3px solid black;
+      height: 680px;
+      position: absolute;
+      left: 48%;
+      margin-left: -3px;
+      top: 210%;
+    }
+      
+
+.team-area{
+  top: 400px;
+ 
+  width: 90%;
+  justify-content: space-around;
+
+}
+
+.single-team{
+  width: 360px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s ease-out;
+}
+
+.single-team:hover:before{
+  opacity: 1;}
+  .single-team:hover .team-text{
+    opacity: 1;
+    transform: translateY(0);
+}
+.single-team:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.single-team img{
+  position: absolute;
+  object-fit: cover;
+  
+}
+.single-team .team-text{
+position: relative;
+text-align: center;
+padding-left: 10px;
+padding-bottom: 10px;
+z-index: 3;
+color: #fff;
+opacity: 0;
+transform: translateY(10px);
+transition: 0.5s;
+}
+.team-text .text{
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 0px;
+  font-family: Impact;
+
+}
+/*CSS for social media icons*/
+
+    </style>
+
+	<link rel = "icon" href ="{{ url_for('static', filename='img/camera.png') }}" 
+        type = "image/x-icon">
+	
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="/login">Admin</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+</div>
+
+<div class="img-container">
+  
+  	<img class="img-container" src="https://ndawards.net/img2/annual-contest.png">
+    <div class="content">
+            <h1 class="gtsectra-bold">ANNUAL PHOTOGRAPHY CONTEST</h1>
+            
+        </div>
+ 
+</div>
+<br>
+<div class="whole content-padding-90" style="padding-top: 90px; padding-left: 400px; padding-right: 400px; padding-bottom: 90px;" id="home-text">
+    <div class="text-wrapper">
+        <section><p style="line-height: 1.8; font-size: 24px; font-family: Arial , sans-serif;"><b>
+            "Art is born out of passion. Fine Art photography is a perfect instrument, which allows a person to communicate with the world and share their vision. It results from the author’s deep sensitivity, a need to express feelings through image, a unique view of the surrounding reality. It can be spontaneous, but it can also be a conscious and deliberate manifesto. We are searching for photos born out of passion – your passion.</b>
+            <br><br></p>
+        </section>
+        <section><p style="line-height: 1.8;  font-size: 24px; font-family: Arial , sans-serif;"><b>
+            The competition is open to everyone, amateurs and professionals alike. Entries are welcome from any country in the world. Your work will be judged by an international panel of high profile photographers.</b>
+            <br><br></p>
+        </section>
+        <section><p style="line-height: 1.8;  font-size: 24px; font-family: Arial , sans-serif;"><b>
+            The winners of the Professional and Amateur sections will receive the titles: <span style="color: #c0232c;">Professional Fine Art Photographer of the Year, Amateur Fine Art Photographer of the Year and $5000 in cash prizes."</span></b></p>
+        </section>
+    </div>
+</div>
+
+<br>
+<br>
+<div style="padding-bottom: 120px;">
+<div style="display:block; ">
+  
+  <img class="img-container2" style="height: 750px; padding-left: 170px;" src="{{ url_for('static', filename='img/img16.jpg') }}">
+
+
+</div>
+
+<div class="vl"></div>
+
+<div class="whole content-padding-90" style="padding-top: 40px;">
+   
+   <p style="margin-bottom: 30px; margin-top: 30px; font-weight: normal; font-family: 'Arial'; letter-spacing: 0.1em; text-transform: uppercase; font-size: 24px; ">
+    <b>Photo Contest Details:</b><br><br>
+<span style="font-size: 20px;">
+    Theme of contest :<b> Nature</b>.<br><br>
+
+      final deadline is february 7th, 2020<br>
+  enter now, don't miss your chance! Register Now!</span></p>
+    <br>
+    <div class="register-button">
+      
+      <a href="/register">Click Here</a>
+
+    </div>
+    
+    <br>
+ <p style="margin-bottom: 30px; margin-top: 30px; font-weight: normal; font-family: 'Arial', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; font-size: 20px; ">
+    Vote your favorite photos posted by<br>
+   photographers from<br>
+    different regions.
+    </p><br>
+
+    <div class="register-button">
+      
+      <a href="/vote">Click Here</a>
+
+    </div>
+
+    <br>
+    <p style="margin-bottom: 30px; margin-top: 30px; font-weight: normal; font-family: 'Arial'; letter-spacing: 0.1em; text-transform: uppercase; font-size: 20px;">
+    To see results<br><br>
+    </p>
+     <div class="register-button">
+      
+      <a href="/result">Click Here</a>
+
+    </div>
+</div>
+</div>
+<br>
+
+<div  style="padding-top: 180px; padding-bottom: 180px;">
+  <h2 style="font-size: 30px; font-family: Impact;">Previous Winners</h2>
+
+  <div class="team-area" style="display: inline;">
+
+    <div class="single-team" style="position: absolute; top: 3100px; left: 210px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img6.jpg') }}">
+      <div class="team-text">
+        <div class="text">Dimpy Bhalotia</div>
+      </div>
+    </div>      
+      <div class="single-team" style="position: absolute; top: 3100px; left: 555px; ">
+    <img style="height: 500px;"  src="{{ url_for('static', filename='img/img7.jpg') }}">
+      <div class="team-text">
+        <div class="text">Geli Zhao</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 3100px; left: 965px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img8.jpg') }}">
+      <div class="team-text">
+        <div class="text">Saif Hussain</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 3100px; left: 1310px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img9.jpg') }}">
+      <div class="team-text">
+        <div class="text">Tu Odnu</div>
+      </div>
+    </div>   
+    
+  
+      
+      <div class="single-team" style="position: absolute; top: 3610px; left: 90px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img10.jpg') }}">
+      <div class="team-text">
+        <div class="text">Artyom Baryshau</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 3610px; left: 765px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img11.jpg') }}">
+      <div class="team-text">
+        <div class="text">Veronica Yoo</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 3610px; left: 1130px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img12.jpg') }}">
+      <div class="team-text">
+        <div class="text">Tod Chen</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 3610px; left: 1471px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img13.jpg') }}">
+      <div class="team-text">
+        <div class="text">Xiaojun Zhang</div>
+      </div>
+    </div>   
+    
+           
+      <div class="single-team" style="position: absolute; top: 4120px; left: 213px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img14.jpg') }}">
+      <div class="team-text">
+        <div class="text">Ji Li</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 4120px; left: 555px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img15.jpg') }}">
+      <div class="team-text">
+        <div class="text">Anna Aiko</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 4120px; left: 900px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img16.jpg') }}">
+      <div class="team-text">
+        <div class="text">Haiyin Lin</div>
+      </div>
+    </div>   
+      <div class="single-team" style="position: absolute; top: 4120px; left: 1245px; ">
+    <img style="height: 500px;" src="{{ url_for('static', filename='img/img4.jpg') }}">
+      <div class="team-text">
+        <div class="text">Emilia Kashfian</div>
+      </div>
+    </div>   
+    
+
+  </div>
+
+</div>
+
+<br><br><br><br>
+<footer class="footer_border_columns" style="position: absolute; top: 4980px;">
+<div class="footer_inner clearfix">
+<div class="fotter_top_border_holder " style="height: 0px;background-color: #f9f9f9;"></div>
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom_holder">
+<div class="footer_bottom">
+<div class="textwidget custom-html-widget"><span style="font-size:14px;font-family: Arial, sans-serif; color: #000000;text-align:center;font-weight: 800;">
+THE IMAGES CAN NOT BE PUBLISHED OR RE-USED IN ANY FORM WITHOUT WRITTEN PERMISSION.
+</span><br/><span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;">
+COPYRIGHT © 2007 - 2020 Annual Photography Contest ALL RIGHTS RESERVED. </span><br/>
+<span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;" ><a href="" style="text-decoration: none;">PRIVACY POLICY</a>&nbsp;&nbsp;  |  &nbsp;&nbsp;<a href="/contact" style="text-decoration: none;">CONTACT </a></span><br/>
+<br/><br/></div>        </div>
+</div>
+</div>
+
+</footer>
+
+
+</body>
+</html>

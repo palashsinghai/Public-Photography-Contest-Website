@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "icon" href ="{{ url_for('static', filename='img/camera.png') }}" 
+        type = "image/x-icon">
+  <title>Registration form</title>
+  <style type="text/css">
+   .title{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'verdana', sans-serif;
+   }
+   body,head{
+    padding: 0px; 
+    width: 100%;
+    margin: 0px;
+    text-align: center; 
+    background : url( {{ url_for('static', filename='img/img28.jpg') }}) no-repeat; 
+   }
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+   .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Arial",sans-serif;
+
+    }
+
+
+    .topnav a:hover {
+    background-color: #ffffff;
+    color: #c0232c;
+    }
+     .container{
+      height: 200px;
+    }
+    .input-img{
+      text-align: center;
+      padding-bottom
+      height:25px;
+      margin: 20px;
+    }
+    .descr-box{
+      display: inline-block;
+      width: 20%;
+      border:5px #171717;
+      box-sizing: border-box;
+      border-radius: 18px;
+      text-align: center;
+      height:400px;
+      margin: 20px;
+    }
+    input[type=text],[type=password],[type=number]{
+    width: 20%;
+    margin: 8px 0;
+    padding: 17px 20px;
+    display: inline-block;
+    border-bottom:4px solid #f2f2f2;
+    box-sizing: border-box;
+    
+    font-size: 20px;
+    background: none;
+    outline: none;
+    margin: none;
+    border: none;
+    color: #f2f2f2;
+
+}
+.group input::placeholder {
+  color: #f2f2f2;
+  opacity: 1; 
+}
+.group textarea::placeholder {
+  float: center;
+  font-size: 20px;
+  color: #f2f2f2;
+  opacity: 1; 
+}
+.group label{
+
+font-family: 'Karla', sans-serif;
+font-size: 25px;
+font-weight: 300;
+}
+ 
+button{
+background-color:#4CAF50;
+width: 10%;
+padding: 9px 5px;
+margin:5px 0;
+cursor:pointer;
+border:none;
+border-radius: 18px;
+color:#ffffff;
+}
+ 
+button:hover{
+border: 3px solid #f2f2f2;
+background: none;
+color: #f2f2f2;
+transition: 0.4s;
+}
+
+    .submit-button{
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background: #171717;
+    text-align: center;
+    margin-top: 26px;
+    padding: 9px 30px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    } 
+#fn,#ln,#un,#pwd,#em,#mn,#fm,#cy{
+font-family:'Lato', sans-serif;
+color: black;
+}
+ 
+#em{
+margin-left:30px;
+}
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    }
+    .footer_bottom a, .footer_bottom ul li a {
+    font-family: Source Sans Pro, sans-serif;
+    }
+    .footer_bottom {
+    display: table-cell;
+    line-height: 32px;
+    height: 65px;
+    width: 1%;
+    vertical-align: middle;
+    }
+    .footer_bottom, .footer_bottom span:not(.q_social_icon_holder):not(.fa-stack):not(.social_icon):not(.q_font_elegant_icon), .footer_bottom p {
+    font-family: Source Sans Pro, sans-serif;
+    color: #d8d8d8;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: center;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    }
+
+    a, p a {
+    color: #fe3700;
+    font-style: normal;
+    }
+  </style>
+
+</head>
+<body style="background-size: cover;background-position: center;">
+<div class="topnav">
+  <a class="active" href="/login">Admin</a>
+  <a href="/">Home</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+</div>
+<form  name="register" action="/register" method="post">
+<h2 class="title" style="font-size: 36px; font-weight: bold;color: #f2f2f2;">Registration Form</h2>
+
+<div style="padding-left: 40px;">
+<p style="margin-bottom: 30px; font-size: 24px; float: left; margin-top: 40px; font-family: 'Arial',sans-serif; font-weight: 1900px; letter-spacing: 0.1em;  text-align: left; color: #f2f2f2;">
+ <b><span style="font-size: 25px; font-family: 'Arial';">NOTE:</span> </b><br><br>
+ <b>Step 01 :</b> Upload your image to google drive.<br><br>
+<b>Step 02 : </b>Share your image from the sharing option.<br><br>
+<b>Step 03 : </b>Copy your sharing link.<br>
+Your sharing link looks like as shown below:<br>
+"https://drive.google.com/file/d/<br>14hz3ySPn-zBd4Tu3NtY1F05LSGdFfWvp/
+view?usp=sharing"<br><br>
+<b>Step 04 : </b>Copy the id from your link, in the above link, id is:<br> "14hz3ySPn-zBd4Tu3NtY1F05LSGdFfWvp"<br><br>
+<b>Step 05 : </b>Paste this id in the image_id input.<br>
+</p>  
+</div>
+
+<div class="group" >
+
+<input type="text" placeholder="Username" name="username" id="uname" autocomplete="off"><br/>
+
+<input type="text" placeholder="Email" name="email" id="email" autocomplete="off"><br/>
+ 
+<input type="text" placeholder="Image_ID" name="image_id" id="image_id" autocomplete="off"><br/>
+
+<input type="text" placeholder="Image Name" name="image_name" id="image_name" autocomplete="off"><br/>
+
+<textarea style="background:none; color: #f2f2f2;border: none;margin: none;padding-top: 20px;padding-left: 33px;" rows="6" cols="49"  class="form-control" name = "description" placeholder="Description" id="description" required data-validation-required-message="Please enter a message." autocomplete="off"></textarea>
+</div>
+<div class="msg" style="color:{{ colour }}; font-size: 20px;font-weight: bold;font-family: Arial;">{{ msg }}</div>
+<div class="container">
+  <button type="submit" class="submit-button" >Submit</button> 
+
+</div>
+        
+
+</form>
+
+
+
+<footer class="footer_border_columns">
+<div class="footer_inner clearfix">
+<div class="fotter_top_border_holder " style="height: 0px;background-color: #f9f9f9;"></div>
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom_holder">
+<div class="footer_bottom">
+<div class="textwidget custom-html-widget"><span style="font-size:14px;font-family: Arial, sans-serif; color: #f2f2f2;text-align:center;font-weight: 800;">
+THE IMAGES CAN NOT BE PUBLISHED OR RE-USED IN ANY FORM WITHOUT WRITTEN PERMISSION.
+</span><br/><span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;">
+COPYRIGHT © 2007 - 2020 Annual Photography Contest ALL RIGHTS RESERVED. </span><br/>
+<span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;" ><a href="" style="text-decoration: none;">PRIVACY POLICY</a>&nbsp;&nbsp;  |  &nbsp;&nbsp;<a href="/contact" style="text-decoration: none;">CONTACT </a></span><br/>
+<br/><br/></div>        </div>
+</div>
+</div>
+
+</footer>
+</body>
+</html>

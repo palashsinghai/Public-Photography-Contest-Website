@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel = "icon" href ="{{ url_for('static', filename='img/camera.png') }}" 
+        type = "image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}" media="all"/>
+	<style type="text/css">
+		.topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+       .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Arial",sans-serif;
+
+    }
+
+    .topnav a:hover {
+    background-color: #ffffff;
+    color: #c0232c;
+    }
+    body,head{
+    padding: 0px; 
+    width: 100%;
+    margin: 0px;
+    text-align: center; 
+    }
+    footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    }
+    .footer_bottom a, .footer_bottom ul li a {
+    font-family: Source Sans Pro, sans-serif;
+    }
+    .footer_bottom {
+    display: table-cell;
+    line-height: 32px;
+    height: 65px;
+    width: 1%;
+    vertical-align: middle;
+    }
+    .footer_bottom, .footer_bottom span:not(.q_social_icon_holder):not(.fa-stack):not(.social_icon):not(.q_font_elegant_icon), .footer_bottom p {
+    font-family: Source Sans Pro, sans-serif;
+    color: #d8d8d8;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: center;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    }
+
+    a, p a {
+    color: #fe3700;
+    font-style: normal;
+    }
+   }
+    </style>
+    <style type="text/css" data-type="vc_custom-css">#respond textarea, #respond input[type='text'], .contact_form input[type='text'],
+.contact_form textarea {
+position: relative;
+width: 100%;
+margin: 0 0 15px 0;
+padding: 10px 17px;
+outline: 0;
+resize: none;
+font-family: inherit;
+font-size: inherit;
+line-height: 18px;
+background-color: #fff;
+color: #8d8d8d;
+border: 1px solid #8d8d8d;
+border-radius: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+.content  {
+padding-top: 80px;
+}
+body .content, body .content.content_top_margin {
+    margin-top: 0!important;
+}
+.content {
+    margin-bottom: 0!important;
+}
+body, .wrapper, .content, .full_width, .content .container, .more_facts_holder {
+    background-color: #ffffff;
+}
+.content {
+    margin-top: 0;
+}
+.container, .content, .content_bottom, .full_width {
+    position: relative;
+    z-index: 100;
+}
+
+
+@media only screen and (max-width: 768px)
+.title h1 {
+    font-size: 30px;
+}
+@media only screen and (max-width: 1000px)
+.title h1 {
+    font-size: 38px;
+}
+.title h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0px;
+}
+.title h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 54px;
+    line-height: 1.25em;
+    
+}
+h1 {
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 56px;
+    line-height: 56px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: -1px;
+    text-transform: none;
+}
+h1, h1 a, h3, h3 a {
+   
+}
+.title {
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    z-index: 101;
+    
+}
+.full_section_inner {
+    position: relative;
+    z-index: 20;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #393939;
+    font-size: 16px;
+    font-weight: 200;
+}
+body {
+    font-family: Raleway,sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    
+    font-weight: 400;
+    overflow-y: scroll;
+    overflow-x: hidden!important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.vc_column_container>.vc_column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+}
+Style Attribute {
+    text-align: left;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    font-size: 16px;
+    font-weight: 200;
+}
+.vc_column-inner::after, .vc_column-inner::before {
+    content: " ";
+    display: table;
+}
+.vc_column-inner::after {
+    clear: both;
+}
+.vc_column-inner::after, .vc_column-inner::before {
+    content: " ";
+    display: table;
+}
+
+}
+p {
+    letter-spacing: 0em;
+    color: #000000;
+    font-family: 'benton-sans', sans-serif;
+    line-height: 1.6em;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: none;
+    color: #393939;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+Style Attribute {
+    text-align: left;
+}
+.container_inner.default_template_holder {
+padding-top: 80px;
+}
+.contact_form input[type=‘text’]:focus
+.contact_form textarea:focus {
+Border-color: #07c509;
+}
+#respond textarea:focus,
+#respond input[type='text']:focus,
+.contact_form input[type='text']:focus,
+.contact_form  textarea:focus,
+.gform_wrapper input[type=text]:focus,
+.gform_wrapper input[type=url]:focus,
+.gform_wrapper input[type=email]:focus,
+.gform_wrapper input[type=tel]:focus,
+.gform_wrapper input[type=number]:focus,
+.gform_wrapper input[type=password]:focus,
+.gform_wrapper textarea:focus,
+.gform_wrapper input[type=button],
+.gform_wrapper input[type=submit],
+.gform_wrapper input[type=button]:hover,
+.gform_wrapper input[type=submit]:hover{
+border-color: #07c509;
+}
+input.wpcf7-form-control.wpcf7-date, input.wpcf7-form-control.wpcf7-number,
+input.wpcf7-form-control.wpcf7-quiz, input.wpcf7-form-control.wpcf7-text,
+select.wpcf7-form-control.wpcf7-select, textarea.wpcf7-form-control.wpcf7-textarea {
+margin: 0 0 15px;
+padding: 10px 17px;
+border: 2px solid #d9d9d9;
+outline: 0;
+resize: none;
+font-family: inherit;
+line-height: 18px;
+background-color: #fff;
+color: #8d8d8d;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+.
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="/login">Admin</a>
+  <a href="/">Home</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+</div>
+
+<a id='back_to_top' href='#'>
+<span class="fa-stack">
+<span class="arrow_carrot-up"></span>
+</span>
+</a>
+<div class="content ">
+<div class="content_inner  ">
+<div class="title_outer title_without_animation  " data-height="100">
+<div class="title position_left standard_title with_background_color " style="height:100px;background-color:#ffffff;">
+<div class="image not_responsive"></div>
+<div class="title_holder" >
+<div class="container">
+<div class="container_inner clearfix">
+<div class="title_subtitle_holder" >
+<div class="title_subtitle_holder_inner">
+<h1 style="color: #393939" ><span>Contact Us</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="full_width">
+<div class="full_width_inner" >
+<div class="contact_info">
+<div class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+<div class="wpb_wrapper">
+<div role="form" class="wpcf7" id="wpcf7-f30345-p30346-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response" role="alert" aria-live="polite"></div>
+
+<form action="/contact" method="post" class="wpcf7-form init cmonitor-ext-0.4.50" novalidate="novalidate">
+
+<p>Your Name (required)<br />
+<span class="wpcf7-form-control-wrap your-name"><input type="text" name="name"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
+<p>Your Email (required)<br />
+<span class="wpcf7-form-control-wrap your-email"><input type="email" name="email"  size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+<p>Your Order Number<br />
+<span class="wpcf7-form-control-wrap YourOrderNumber"><input type="text" name="phone"  size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span></p>
+<p>Your Message (required)<br />
+<span class="wpcf7-form-control-wrap your-message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+<p><input type="submit" class="wpcf7-form-control wpcf7-submit" /></p>
+<!-- campaignmonitor extension by Renzo Johnson --></form></div>
+</div>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div>
+</div>
+</div>
+</div>
+
+<footer class="footer_border_columns">
+<div class="footer_inner clearfix">
+<div class="fotter_top_border_holder " style="height: 1px;background-color: #f9f9f9;"></div>
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom_holder">
+<div class="footer_bottom">
+<div class="textwidget custom-html-widget"><span style="font-size:14px;font-family: Arial, sans-serif; color: #000000;text-align:center;font-weight: 800;">
+THE IMAGES CAN NOT BE PUBLISHED OR RE-USED IN ANY FORM WITHOUT WRITTEN PERMISSION.
+</span><br/><span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;">
+COPYRIGHT © 2007 - 2020 Annual Photography Contest ALL RIGHTS RESERVED. </span><br/>
+<span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;" ><a href="" style="text-decoration: none;">PRIVACY POLICY</a>&nbsp;&nbsp;  |  &nbsp;&nbsp;<a href="/contact" style="text-decoration: none;">CONTACT </a></span><br/>
+<br/><br/></div>        </div>
+</div>
+</div>
+
+</footer>
+</div>
+</div>
+
+</body>
+</html>

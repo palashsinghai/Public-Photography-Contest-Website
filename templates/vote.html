@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<title>VOTE</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="{{ url_for('static', filename='img/camera.png') }}" 
+        type = "image/x-icon">
+
+<style>
+    .mySlides {display:none}
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+     .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Arial",sans-serif;
+
+    }
+     .topnav a:hover {
+    background-color: #ffffff;
+    color: #c0232c;
+    }
+
+    .npbutton
+    {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background: #c0232c;
+    text-align: center;
+    margin-top: 26px;
+    padding: 10px 30px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    text-decoration: none;
+    }
+    .npbutton:hover
+    {
+    background-color: #ffffff;
+    color: #c0232c;
+    border: 3px solid #c0232c;
+    border-radius: 10px;
+    transition: 0.4s ;
+    }
+    .logout a:hover {
+      background-color: #ffffff;
+      color: #c0232c;
+      border: 3px solid #c0232c;
+      transition: 0.4s ;
+      }
+    .logout a {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background: #c0232c;
+    text-align: center;
+    margin-top: 26px;
+    padding: 10px 30px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    }
+    .vote-button {
+    font-weight: 700;
+    font-size: 18px;
+    color: #c0232c;
+    background: #ffffff;
+    text-align: center;
+    margin-top: 26px;
+    padding: 10px 30px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border: 3px solid #c0232c;
+    }
+    .vote-button:hover{
+      background-color: #c0232c;
+      color: #ffffff;
+      
+      transition: 0.4s ;
+      }
+      
+    body{
+
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+    width: 100%;
+    }
+    footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    }
+    .footer_bottom a, .footer_bottom ul li a {
+    font-family: Source Sans Pro, sans-serif;
+    }
+    .footer_bottom {
+    display: table-cell;
+    line-height: 32px;
+    height: 65px;
+    width: 1%;
+    vertical-align: middle;
+    }
+    .footer_bottom, .footer_bottom span:not(.q_social_icon_holder):not(.fa-stack):not(.social_icon):not(.q_font_elegant_icon), .footer_bottom p {
+    font-family: Source Sans Pro, sans-serif;
+    color: #d8d8d8;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: center;
+    }
+    .footer_bottom, .footer_bottom ul, footer .container_inner > .widget {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    }
+   
+ 
+    a, p a {
+    color: #fe3700;
+    font-style: normal;
+    }
+    .msg{
+      position: absolute;
+      top: 780px;
+      left: 62%;
+      font-size: 26px;
+      font-weight: bold;
+      color: #c0232c;
+    }
+  .background{
+  
+  padding: 25px;
+  background: url({{ url_for('static', filename='img/') }});
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px ;
+}
+</style>
+<body>
+<div class="topnav">
+  <a class="active" href="/login">Admin</a>
+  <a href="/">Home</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+  <a style="float: right;" >Hello {{ account['username'] }}</a>
+</div>
+
+<div class="background">
+<div class="w3-container" id="background">
+  <h2 style="text-align: left; font-family: 'Impact'; font-size: 50px;" ><b>VOTE</b></h2>
+  </div>
+
+{% for regist in register %}   
+<div class="w3-content" style="position: absolute; top: 200px; left: 40px;" >
+  <img class="mySlides" src="https://drive.google.com/uc?id={{regist.image_id}}" style="width:800px; height: 800px;">  
+</div>
+
+<p style=" font-family:'Arial',sans-serif; font-size: 30px;position: absolute; top: 290px; left: 63%;">Details</p>
+
+{% endfor %}
+<div class="w3-center" style="position: absolute; top: 590px; left: 59%;" >
+  <div class="w3-section">
+    <button class="npbutton" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="npbutton" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+ </div>  
+   {% for regist in register %}
+  <div class="info"  >
+    <p id="demo0" class="demo0" style="position: absolute; left :63%; top :420px; font-size: 26px;"><b>Title:  {{ regist.image_name }}</b></p>
+    <p id="demo" class="demo1" style="position: absolute; left :63%; top :450px; font-size: 26px;"><b>Name:  {{ regist.username }}</b></p>
+    <p class="demo2" style="position: absolute; left :63%; top :480px; font-size: 26px;"><b>Email: {{ regist.email }}</b></p>
+    <p class="demo3" style="position: absolute; left :63%; top :510px; font-size: 26px;"><b>Description: {{ regist.description }}</b></p>
+  </div>
+    {% endfor %}
+
+
+<form method="post" action="/votebutton" class="vote-form">
+  
+  <center>
+    {% for regist in register %}
+      
+      <input type="submit" style="position: absolute; top: 680px; left: 62%;" class="vote-button" name="voter" value= "VOTE  {{regist.username}}">
+        
+    {% endfor %}
+  </center>
+   
+</form>
+  
+<div class="msg" style="color: {{ colour }}">{{ msg }}</div>
+
+<br/><br/><br/>
+<div class="logout" style="position: absolute; top: 80px; left: 93%;">
+  <center>
+      <a href="{{ url_for('logout') }}">logout</a> 
+  </center>
+</div>
+</div>
+<br><br>
+<script>
+  
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function vote(){
+var j = document.getElementsByClassName("voter");
+
+}
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  
+  var v = document.getElementsByClassName("vote-button");
+  var dots0 = document.getElementsByClassName("demo0");
+  var dots = document.getElementsByClassName("demo1");
+  var dots2 = document.getElementsByClassName("demo2");
+  var dots3 = document.getElementsByClassName("demo3");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+ 
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots0.length; i++) {
+    dots0[i].className = dots0[i].className.replace(" w3-red", "");
+    dots0[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+    dots[i].style.display = "none";
+  }
+  for (i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" w3-red", "");
+    dots2[i].style.display = "none";
+  }
+  for (i = 0; i < dots3.length; i++) {
+    dots3[i].className = dots3[i].className.replace(" w3-red", "");
+    dots3[i].style.display = "none";
+  }
+  
+  for (i = 0; i < v.length; i++) {
+    v[i].className = v[i].className.replace(" w3-red", "");
+    v[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";  
+ 
+ dots0[slideIndex-1].style.display = "block";
+  
+ dots[slideIndex-1].style.display = "block";
+
+ dots2[slideIndex-1].style.display = "block";
+
+ dots3[slideIndex-1].style.display = "block";
+ 
+
+
+ v[slideIndex-1].style.display = "block";
+ v[abs(slideIndex-2)].value = "";
+ v[abs(slideIndex-3)].value = "";  
+ 
+}
+
+</script>
+
+<footer class="footer_border_columns"  style="position: absolute; top: 1100px;">
+<div class="footer_inner clearfix">
+<div class="fotter_top_border_holder " style="height: 0px;background-color: #f9f9f9;"></div>
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom_holder">
+<div class="footer_bottom">
+<div class="textwidget custom-html-widget"><span style="font-size:14px;font-family: Arial, sans-serif; color: #000000;text-align:center;font-weight: 800;">
+THE IMAGES CAN NOT BE PUBLISHED OR RE-USED IN ANY FORM WITHOUT WRITTEN PERMISSION.
+</span><br/><span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;">
+COPYRIGHT © 2007 - 2020 Annual Photography Contest ALL RIGHTS RESERVED. </span><br/>
+<span style="font-size:12px;font-family: Source Sans Pro;color: #a7a6a6;" ><a href="" style="text-decoration: none;">PRIVACY POLICY</a>&nbsp;&nbsp;  |  &nbsp;&nbsp;<a href="/contact" style="text-decoration: none;">CONTACT </a></span><br/>
+<br/><br/></div>        </div>
+</div>
+</div>
+
+</footer>
+</body>
+</html>
