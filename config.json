@@ -1,0 +1,15 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/photocontest3",
+    "prod_uri":"mysql://root:@localhost/photocontest3",
+
+    "admin_user":"harry",
+    "admin_password": "subscribenow",
+    "result_day" : "False"
+
+
+  }
+
+}
