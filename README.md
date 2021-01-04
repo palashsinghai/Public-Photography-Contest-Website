@@ -3,14 +3,22 @@ This is a photography contest website which provides  a platform for live voting
 
 
 Front End:
+
 -HTML
+
 -CSS
+
 -JavaScript
 
+
 Back End:
+
 -Python
+
 -Flask
+
 -Mysql
+
 
 SOftware Requirements:
 -XAMPP
