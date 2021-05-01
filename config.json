@@ -5,8 +5,8 @@
     "local_uri": "mysql://root:@localhost/photocontest3",
     "prod_uri":"mysql://root:@localhost/photocontest3",
 
-    "admin_user":"harry",
-    "admin_password": "subscribenow",
+    "admin_user":"Admin",
+    "admin_password": "admin@123",
     "result_day" : "False"
 
 
