@@ -1,6 +1,6 @@
 
 # Public Photography Contest Website
-![App Screenshot](https://github.com/palashsinghai/Public-Photography-Contest-Website/blob/main/static/img/camera.png)
+<img src="https://github.com/palashsinghai/Public-Photography-Contest-Website/blob/main/static/img/camera.png">
 This is a photography contest website which is which provides a good platform for photographers to showcase their skills and get good rewards for those.
 It contains a unique voting system which enables a user to vote once for a particular contestant.
 
