@@ -7,13 +7,13 @@ It contains a unique voting system which enables a user to vote once for a parti
 
 ## Screenshots
 
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/main_page.png" width=450 height=200 align="Left">
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/main_page_navigation.png" width=450 height=200 align="Right">
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/login_page.png" width=450 height=200 align="Left">
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/register_page.png" width=450 height=200 align="Right">
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/vote_page.png" width=450 height=200 align="Left">
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/result_page.png" width=450 height=200 align="Right">
-<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/contact_us_page.png" width=450 height=200>
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/main_page.png" width=400 height=200 align="Left">
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/main_page_navigation.png" width=400 height=200 align="Right">
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/login_page.png" width=400 height=200 align="Left">
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/register_page.png" width=400 height=200 align="Right">
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/vote_page.png" width=400 height=200 align="Left">
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/result_page.png" width=400 height=200 align="Right">
+<img src="https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/contact_us_page.png" width=400 height=200>
 
 ## Tech Used
 
