@@ -1,29 +1,42 @@
-# Public-Photography-Contest-Website
-This is a photography contest website which provides  a platform for live voting.
+
+# Public Photography Contest Website
+![App Screenshot](https://github.com/palashsinghai/Public-Photography-Contest-Website/blob/main/static/img/camera.png)
+This is a photography contest website which is which provides a good platform for photographers to showcase their skills and get good rewards for those.
+It contains a unique voting system which enables a user to vote once for a particular contestant.
 
 
-Front End:
+## Screenshots
 
--HTML
+![App Screenshot](https://github.com/palashsinghai/screenshots/blob/main/public_photography_contest_website_ss/result_page.png) 
+## Tech Used
 
--CSS
+**Frontend:** Html, CSS, JS
 
--JavaScript
+**BackEnd:** Flask
 
+**Software Used:** XAMPP
 
-Back End:
+  
+## Installation
 
--Python
+**Step 1:**
+Download XAMPP
+https://www.apachefriends.org/download.html
 
--Flask
+**Step 2:**
+Start Apache and Mysql server.
 
--Mysql
+**Step 3:**
+Open http://localhost/phpmyadmin/ on your browser
 
+**Step 4:**
+Import photocontest3 file in database.
+## Deployment
 
-SOftware Requirements:
+To deploy this project run
 
--XAMPP
+```bash
+  python app.py
+```
 
-For database I've used xampp server and mysql database.
-
-Download the photocontest3.sql file and export it in the database or copy-paste all the queries.
+  and then open the output url in your browser.
